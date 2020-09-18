@@ -3,3 +3,13 @@
 ################################################################################
 
 /MiniHome/.vs/MiniHome
+/MiniHome/MiniHome.Domain/bin/Debug
+/MiniHome/MiniHome.Domain/obj/Debug
+/MiniHome/MiniHome.SQL/bin/Debug
+/MiniHome/MiniHome.SQL/obj/Debug
+/MiniHome/MiniHome.SQL/스크립트 가져오기 로그
+/MiniHome/MiniHome.Tests/bin/Debug
+/MiniHome/MiniHome.Tests/obj/Debug
+/MiniHome/MiniHome.WebUI/bin
+/MiniHome/MiniHome.WebUI/obj/Debug
+/MiniHome/packages
