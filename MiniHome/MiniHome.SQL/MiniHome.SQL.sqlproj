@@ -76,5 +76,6 @@
     <Build Include="StoredProcedure\ESP_Member_Save.sql" />
     <Build Include="StoredProcedure\ESP_PartBoard_Save.sql" />
     <Build Include="StoredProcedure\ESP_PartComment_Save.sql" />
+    <Build Include="StoredProcedure\ESP_Token_Save.sql" />
   </ItemGroup>
 </Project>

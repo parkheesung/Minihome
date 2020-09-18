@@ -114,6 +114,16 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiniHome.Domain\MiniHome.Domain.csproj">
+      <Project>{fe0199d0-e544-4289-bb93-6b1472e5bd9e}</Project>
+      <Name>MiniHome.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiniHome.WebUI\MiniHome.WebUI.csproj">
+      <Project>{0b928391-9c2a-46d3-a3f2-ddd7005bf8bc}</Project>
+      <Name>MiniHome.WebUI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

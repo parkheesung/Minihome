@@ -9,6 +9,7 @@ namespace MiniHome.Domain
 {
 	public interface IMiniHomeRepository : IDefaultRepository
 	{
+		ReturnValue TokenSave(long MemberSeq);
 
 		ReturnValue BoardContentSave(BoardContent boardcontent);
 

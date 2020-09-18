@@ -16,7 +16,8 @@
 	[UsedPoint] [int] NOT NULL DEFAULT 0, 
 	[Area] [nvarchar](100) NOT NULL, 
 	[UserType] [varchar](30) NOT NULL, 
-	[UserGrade] [varchar](30) NOT NULL
+	[UserGrade] [varchar](30) NOT NULL, 
+    [IsCrypto] BIT NOT NULL DEFAULT 0
 )
 GO
 ALTER TABLE [Member]

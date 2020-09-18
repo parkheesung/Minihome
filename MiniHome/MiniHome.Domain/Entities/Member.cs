@@ -61,6 +61,8 @@ namespace MiniHome.Domain
         [Entity("UserGrade", SqlDbType.VarChar, 30)]
         public string UserGrade { get; set; } = string.Empty;
 
+        [Entity("IsCrypto", SqlDbType.Bit, 1)]
+        public bool IsCrypto { get; set; } = false;
 
         public virtual string TableName { get { return "Member"; } set { } }
         public virtual string TargetColumn { get { return "MemberSeq"; } set { } }

@@ -13,6 +13,28 @@ namespace MiniHome.Domain
 		{
 		}
 
+		public ReturnValue TokenSave(long MemberSeq)
+		{
+			var result = new ReturnValue();
+
+			try
+			{
+				using (var cmd = new SqlCommand("ESP_Token_Save", this.SqlConn))
+				{
+					cmd.CommandType = System.Data.CommandType.StoredProcedure;
+					cmd.AddParameterInput("@MemberSeq", System.Data.SqlDbType.BigInt, MemberSeq, 8);
+					result = cmd.ExecuteReturnValue();
+				}
+			}
+			catch (Exception ex)
+			{
+				if (this.Logger != null) this.Logger.Error(ex);
+				result.Error(ex);
+			}
+
+			return result;
+		}
+
 		public ReturnValue BoardContentSave(BoardContent boardcontent)
 		{
 			var result = new ReturnValue();
